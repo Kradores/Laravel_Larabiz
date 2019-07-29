@@ -18,15 +18,15 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            @foreach ($listings as $listing)
                             <tbody>
+                            @foreach ($listings as $listing)
                                 <tr>
                                     <td>{{$listing->name}}</td>
-                                    <td></td>
+                                    <td><a class="btn btn-outline-secondary btn-sm float-right" href="/listing/{{$listing->id}}/edit">Edit</a></td>
                                     <td></td>
                                 </tr>
-                            </tbody>
                             @endforeach
+                        </tbody>
                         </table>
                     @endif
                 </div>
